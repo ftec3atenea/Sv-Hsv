@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="ScrollView App"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                app:shapeAppearanceOverlay="@style/sty_logo"
+                app:srcCompat="@drawable/atenea"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:text="Regístrate"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                style="@style/sty_field"
+                android:hint="Aquí va tu nombre"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                style="@style/sty_field"
+                android:hint="Aquí va tu correo"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                style="@style/sty_field"
+                android:hint="Aquí va tu teléfono"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                style="@style/sty_field"
+                android:hint="Aquí va tu dirección"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/editTextTextPostalAddress"
+                style="@style/sty_field"
+                android:hint="Aquí va tu ZIP"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/editTextTime"
+                style="@style/sty_field"
+                android:hint="Aquí va tu hora"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                style="@style/sty_field"
+                android:hint="Aquí va tu fecha"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                style="@style/sty_field"
+                android:hint="Aquí va tu número"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="Escoje tu Avatar"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/im1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/im1" />
+
+                    <ImageView
+                        android:id="@+id/im2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/im2" />
+
+                    <ImageView
+                        android:id="@+id/im3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/im3" />
+
+                    <ImageView
+                        android:id="@+id/im4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/im4" />
+
+                    <ImageView
+                        android:id="@+id/im5"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/im5" />
+
+                    <ImageView
+                        android:id="@+id/im6"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:srcCompat="@drawable/im6" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="Deseo ser contactado por:"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="casual"
+                    android:text="WhatsApp"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="casual"
+                    android:text="Llamada"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Correo"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="casual"
+                android:text="Acepto TyC"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E2E2E2"
+                android:textColor="@color/black"
+                android:fontFamily="cursive"
+                android:text="¡Vamos!"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
